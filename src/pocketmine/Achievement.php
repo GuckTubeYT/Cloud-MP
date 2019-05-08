@@ -35,28 +35,28 @@ abstract class Achievement{
 	 */
 	public static $list = [
 		/*"openInventory" => array(
-			"name" => "Taking Inventory",
+			"name" => "인벤토리를 여세요!",
 			"requires" => [],
 		),*/
 		"mineWood" => [
-			"name" => "Getting Wood",
+			"name" => "나무를 캐세요!",
 			"requires" => [ //"openInventory",
 			]
 		],
 		"buildWorkBench" => [
-			"name" => "Benchmarking",
+			"name" => "작업하세요!",
 			"requires" => [
 				"mineWood"
 			]
 		],
 		"buildPickaxe" => [
-			"name" => "Time to Mine!",
+			"name" => "광질할 시간!",
 			"requires" => [
 				"buildWorkBench"
 			]
 		],
 		"buildFurnace" => [
-			"name" => "Hot Topic",
+			"name" => "화로를 만드세요!",
 			"requires" => [
 				"buildPickaxe"
 			]
